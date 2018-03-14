@@ -5,8 +5,8 @@ yami.append(44)
 yami.append(78)
 yami.append(128)
 print(yami)
-print(yami[0:2])
-print(yami[:2])
+print(yami[0:2])  # 44 78
+print(yami[:2])  # 44 78
 print(yami[-1])
 print(yami[:])
 print(yami)
@@ -25,9 +25,9 @@ print(stok)
 print(stok.keys())
 print(stok.values())
 
-#in
+# in
 
-a = [1,2,3,4,5]
+a = [1, 2, 3, 4, 5]
 yy = a.index(3)
 print(yy)
 if 3 in a:
