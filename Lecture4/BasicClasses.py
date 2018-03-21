@@ -16,9 +16,21 @@ class Insan:
     def kisiyiOzetGec(self):
         print("Merhaba ben " + self.isim + ". " + str(self.yas) + " yaşındayım.")
 
-new_human = Insan(1.77, 67, "kahverengi", "uzun", "kahvrengi", 18, "kız", "Nehir", "Arık")
+    def boylariKarsilastır(self, baska_bir_insan):
+        if self.boy > baska_bir_insan.boy:
+            print(self.isim + " daha uzun")
+        else:
+            print(baska_bir_insan.isim + " daha uzun")
 
-print(new_human.isim)
-new_human.isimDegistir("Yakamoz")
-print(new_human.isim)
-print(new_human.kisiyiOzetGec())
+
+insan_bir = Insan(1.77, 67, "kahverengi", "uzun", "kahvrengi", 18, "kız", "Nehir", "Arık")
+insan_iki = Insan(1.60, 51, "kahverengi", "orta", "kahverengi", 20, "kız", "Zehra", "Usta")
+
+print(insan_bir.isim)
+insan_bir.isimDegistir("Yakamoz")
+print(insan_bir.isim)
+print(insan_iki.isim)
+insan_iki.isimDegistir("Sen Bul")
+print(insan_iki.isim)
+insan_bir.boylariKarsilastır(insan_iki)
+insan_iki.boylariKarsilastır(insan_bir)
