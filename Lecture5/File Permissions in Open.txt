@@ -1,0 +1,5 @@
+r = okuma
+w = yazma
+a = ekleme
+r+ = okuma/yazma
+a+ = okuma/ekleme
